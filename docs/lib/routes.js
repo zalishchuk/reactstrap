@@ -29,6 +29,7 @@ import CarouselPage from './Components/CarouselPage';
 import ListGroupPage from './Components/ListGroupPage';
 import ClearfixPage from './Utilities/ClearfixPage';
 import ColorsPage from './Utilities/ColorsPage';
+import FlexPage from './Utilities/FlexPage';
 import NotFound from './NotFound';
 import Components from './Components';
 import Utilities from './Utilities';
@@ -70,6 +71,7 @@ const routes = (
       <IndexRedirect to="colors/" />
       <Route path="colors/" component={ColorsPage} />
       <Route path="clearfix/" component={ClearfixPage} />
+      <Route path="flex/" component={FlexPage} />
     </Route>
     <Route path="*" component={NotFound} />
   </Route>

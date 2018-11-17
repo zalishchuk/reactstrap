@@ -18,6 +18,7 @@ import Dropdown from './Dropdown';
 import DropdownItem from './DropdownItem';
 import DropdownMenu from './DropdownMenu';
 import DropdownToggle from './DropdownToggle';
+import Flex from './Flex';
 import Fade from './Fade';
 import Badge from './Badge';
 import Card from './Card';
@@ -109,6 +110,7 @@ export {
   DropdownItem,
   DropdownMenu,
   DropdownToggle,
+  Flex,
   Fade,
   Badge,
   Card,
@@ -175,5 +177,5 @@ export {
   UncontrolledDropdown,
   UncontrolledNavDropdown,
   UncontrolledTooltip,
-  Util,
+  Util
 };
