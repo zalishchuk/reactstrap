@@ -49,12 +49,12 @@ const getPropSizeClasses = (name, _value, reverse = false, map = {}) => {
       const valueWidth = map[value[width]] || value[width];
       const prefix = index ? `-${width}-` : '-';
       if (isObject(reverse) && reverse[width]) suffix = '-reverse';
-      if (typeof value !== 'string') return classes;
+      if (!valueWidth && valueWidth !== '') return classes;
       return [`${name}${prefix}${valueWidth}${suffix}`, ...classes];
     }, []);
   }
 
-  if (typeof value !== 'string') return '';
+  if (!value && value !== '') return '';
   return `${name}-${value}${suffix}`;
 };
 
